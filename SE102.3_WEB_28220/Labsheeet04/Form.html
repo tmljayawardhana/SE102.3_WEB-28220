@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Form create</title>
+    </head>
+    <body>
+
+        <h2> Registered Form</h2>
+
+        <form>
+          <p>  <lable for ="Fname"> First name </lable>
+            <input type="text" id="Fname"><br></p>
+
+          <p>  <lable for="lName">Last Name </lable>
+            <input type="text" id="lName"><br></p>
+
+            <p> <lable for="number">Mobile Number</lable>
+            <input type="text" id="number"><br></p>
+
+            <lable for="Gender">Gender    </lable>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+            <br><br>
+
+            <lable for="Email">Email </lable>
+            <input type="email" name="email" ><br><br>
+
+            <lable for="fmusic">Favourite Music </lable>
+            <input type="checkbox" name="fmusic" value="POP">POP
+            <input type="checkbox" name="fmusic" value="Rock">Rock
+            <input type="checkbox" name="fmusic" value="other">Other 
+            <br><br>
+
+            <lable for="Additional" >Additional </lable>
+            <textarea id="text" name="TextArea" rows="5" cols="5"></textarea>
+            <br>
+
+            <input type="checkbox" > <lable> I agree term and conditions</lable>
+            <br>
+             <input type="button" name="Submit" value="Submit">
+             <input type="button" name="Reset" value="Reset">  
+            </form>
+
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required><br>
+        
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required><br>
+        
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+        
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label><br>
+        
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <!-- Add more countries as needed -->
+                </select><br>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+        
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required><br>
+        
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms of use</label><br>
+        
+                <input type="submit" value="Confirm">
+                <input type="button" value="Cancel">
+            </form>
+
+
+
+    </body>
+</html>

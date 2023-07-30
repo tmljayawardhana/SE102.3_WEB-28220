@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circle Area Calculator</title>
+</head>
+<body>
+    <h1>Circle Area Calculator</h1>
+
+    <script>
+        function calculateCircleArea() {
+            // Prompt the user to enter the radius
+            var radiusInput = prompt("Enter the radius of the circle:");
+
+            // Convert the input to a number (parseFloat) to handle decimal values
+            var radius = parseFloat(radiusInput);
+
+            // Check if the input is a valid number
+            if (!isNaN(radius) && radius >= 0) {
+                // Calculate the area using the formula: π * radius^2
+                var pi = 22 / 7;
+                var area = pi * radius * radius;
+
+                // Display the result using an alert box
+                alert("The area of the circle is: " + area.toFixed(2));
+            } else {
+                // Display an error message if the input is invalid
+                alert("Invalid input. Please enter a valid positive number for the radius.");
+            }
+        }
+
+        // Call the function to calculate the circle area when the page loads
+        // This is just for demonstration purposes; you can call the function on a button click instead
+        calculateCircleArea();
+    </script>
+</body>
+</html>

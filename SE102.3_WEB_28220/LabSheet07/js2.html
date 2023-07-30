@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <p>Enter marks for each subject:</p>
+    <label>Subject 1: <input type="text" id="subject1" /></label><br>
+    <label>Subject 2: <input type="text" id="subject2" /></label><br>
+    <label>Subject 3: <input type="text" id="subject3" /></label><br>
+    <label>Subject 4: <input type="text" id="subject4" /></label><br>
+
+    <button onclick="calculateAverage()">Calculate Average</button>
+
+    <script>
+        function calculateAverage() {
+            // Get marks from the input fields
+            var marks1 = parseFloat(document.getElementById("subject1").value);
+            var marks2 = parseFloat(document.getElementById("subject2").value);
+            var marks3 = parseFloat(document.getElementById("subject3").value);
+            var marks4 = parseFloat(document.getElementById("subject4").value);
+
+            // Calculate the total average
+            var totalAverage = (marks1 + marks2 + marks3 + marks4) / 4;
+
+            // Display the total average
+            alert("Total Average: " + totalAverage.toFixed(2));
+
+            // Display the appropriate message based on the average
+            if (totalAverage > 30) {
+                alert("Congrats! You passed");
+            } else {
+                alert("Better luck next time");
+            }
+        }
+    </script>
+</body>
+</html>
